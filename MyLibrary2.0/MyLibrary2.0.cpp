@@ -79,7 +79,7 @@ public:
 				vector<string> temp = _russianEnglish.second();
 				_russianEnglish.erase(iter + _russianEnglish.find(Word));
 				item.first = NewWord;
-				item.second = temp;
+				item.second[NewWord] = temp;
 			}
 		}
 	}
